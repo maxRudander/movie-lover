@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 """ 
 API data-requests go to: http://www.omdbapi.com/?apikey=[db0723c0]&
+API poster-requests go to: http://img.omdbapi.com/?apikey=[db0723c0]&
 """
 
 @app.route("/")
