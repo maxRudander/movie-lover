@@ -125,7 +125,8 @@ h1.home {
 	text-align: center;
 }
 
-div.search_field {
+div.search-field {
+	width: 300px; /* Är inte helt centrerad */
 	margin-left: auto;
 	margin-right: auto;
 }
