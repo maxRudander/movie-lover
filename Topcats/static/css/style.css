@@ -125,10 +125,15 @@ h1.home {
 	text-align: center;
 }
 
-div.search-field {
-	width: 300px; /* Är inte helt centrerad */
+div.search-div {
+	width: 400px; /* Är inte helt centrerad */
 	margin-left: auto;
 	margin-right: auto;
+}
+
+input.search-field  {
+	width: 300px;
+	margin: 0.5em 0.3em 5em 0;
 }
 
 
