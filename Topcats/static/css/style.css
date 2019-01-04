@@ -126,7 +126,8 @@ h1.home {
 }
 
 div.search_field {
-	box-align: center;
+	max-width: 300px; /*måste korrigeras */
+	margin: 0 auto;
 }
 
 div.jumbotron.home {
