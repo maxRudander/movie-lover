@@ -40,6 +40,10 @@ def is_logged_in(f):
 def index():
     return render_template("index.html", author="Christopher")
 
+@app.route("/movie/")
+def movie():
+    return render_template("movie.html", authour="Martin")
+
 @app.route("/edit/", methods=['GET', 'POST'])
 @is_logged_in
 def add_article():
@@ -74,26 +78,6 @@ def update():
     my_file.close()
 
     return redirect("/article_list/")
-
-@app.route("/static/tool_articles/<header>")
-def tool_article(header):
-    article_path = "static/tool_articles/" + str(header) + ".txt"
-
-    with open(article_path, "r") as my_file:
-        subject = my_file.read()
-        my_file.close()
-
-    return render_template("tool_article.html", header=header, subject=subject, author="Martin")
-
-@app.route("/static/detergent_articles/<heading>")
-def detergent_article(heading):
-    article_path = "static/detergent_articles/" + str(heading) + ".txt"
-
-    with open(article_path, "r") as my_file:
-        text = my_file.read()
-        my_file.close()
-
-    return render_template("detergent_article.html", heading=heading, text=text, author="Martin")
 
 @app.route("/register/", methods=["GET", "POST"])
 def register():
