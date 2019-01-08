@@ -1,6 +1,4 @@
-# Topcats
-
-## Filmälskaren
+# Filmälskaren
 
 Filmälskaren är en webbapplikation som hjälper filmälskare hitta information om filmer. Webbapplikationen är en mashup som använder tre olika APIer för att få information om filmerna, posters, samt trailers.
 
