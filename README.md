@@ -15,7 +15,7 @@ Kommande installationer sköts via kommandotolken / terminalen. När ordet “te
 ### Virtuell miljö
 När Python är installerat bör en virtuell miljö för koden skapas inuti projektmappen. Dependencies som Python-programmet använder installeras i den virtuella miljön.
 
-Navigera i terminalen till den plats projektmappen ska ligga. Skriv sedan följande kommando:
+Navigera via terminalen till den mapp projektmappen ska ligga i. Skriv sedan följande kommando:
 
 ```
 $ mkdir <project-name> (Skapar projektmapp. Skippa detta om en projektmapp redan finns.)
@@ -32,7 +32,7 @@ Windows:
 $ py -3 -m venv <venv-name>
 ```
 
-Aktivera den virtuella miljön med följande kommandon:
+Aktivera den virtuella miljön med följande kommando:
 
 Mac:
 ```
