@@ -8,7 +8,7 @@ Filmälskaren är en webbapplikation som hjälper filmälskare hitta information
 Genom att följa instruktionerna nedan kommer applikationen kunna köras lokalt på din dator.
 
 ### Installera Python
-Python 3.7 används som programmeringsspråk till servern. Följ instruktionerna på (https://www.python.org/downloads/) och installera Python till datorn.
+Python 3.7 används som programmeringsspråk till servern. Följ instruktionerna på https://www.python.org/downloads/ och installera Python till datorn.
 
 Kommande installationer sköts via kommandotolken / terminalen. När ordet “terminal” används framöver menas både Macs terminal och Windows kommandotolk.
 
@@ -18,8 +18,8 @@ När Python är installerat bör en virtuell miljö för koden skapas inuti proj
 Navigera i terminalen till den plats projektmappen ska ligga. Skriv sedan följande kommando:
 
 ```
-$ mkdir <myproject> (Skapar projektmapp. Skippa om mapp redan finns.)
-$ cd myproject
+$ mkdir <project-name> (Skapar projektmapp. Skippa detta om en projektmapp redan finns.)
+$ cd project-name
 ```
 
 Mac:
@@ -44,16 +44,16 @@ Windows:
 venv\Scripts\activate
 ```
 
-När den virtuella miljön är aktiverad ska dess namn stå inom paranteser längst till vänster i sökvägen i terminalen.
+När den virtuella miljön är aktiverad ska dess namn stå inom parenteser längst till vänster i sökvägen i terminalen.
 
 ### Installera Flask
-Python-ramverket Flask används för att bygga webbservern. Installera Flask inuti den virtuella miljön, som måste vara aktiverad.
+Python-ramverket Flask används för att bygga webbservern. Installera Flask i den virtuella miljön. Den virtuella miljön måste vara aktiverad.
 
 ```
 $ pip install Flask
 ```
 
-###… Fyll på när vi pippar nya saker
+### … Fyll på när vi pippar nya saker
 
 * Christopher
 * Martin
