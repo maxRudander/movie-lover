@@ -6,7 +6,7 @@ Filmälskaren är en webbapplikation som hjälper filmälskare hitta information
 Genom att följa instruktionerna nedan kommer applikationen kunna köras lokalt på din dator.
 
 ### Installera Python
-Python 3.7 används som programmeringsspråk till servern. Följ instruktionerna på [(https://www.python.org/downloads/)] och installera Python till datorn.
+Python 3.7 används som programmeringsspråk till servern. Följ instruktionerna på [Pythons hemsida] (https://www.python.org/downloads/) och installera Python 3.7 på datorn.
 
 Kommande installationer sköts via kommandotolken / terminalen. När ordet “terminal” används framöver menas både Macs terminal och Windows kommandotolk.
 
