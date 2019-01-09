@@ -12,9 +12,9 @@ API poster-requests go to: http://img.omdbapi.com/?apikey=[db0723c0]&
 def index():
     return render_template("index.html", author="Christopher")
 
-@app.route("/static/<path:path>")
+'''@app.route("/static/<path:path>")
 def serve_static_files(path):
-    return send_from_directory("static", path)
+    return send_from_directory("static", path)'''
 
 if __name__ == "__main__":
     app.secret_key='secret123'
