@@ -18,8 +18,6 @@ a.navbar-brand {
 	font-family: 'Lobster';
 }
 
-
-
 .navbar-collapse {
 	flex-grow: 0;
 	align-items: right;
@@ -104,6 +102,11 @@ footer {
 	background-color: rgb(180, 11, 11);
 	padding: 1em 0 0;
 	overflow: hidden;
+	text-align: center;
+}
+
+footer span {
+	color: #ccc;
 }
 
 ul.foot-col {
