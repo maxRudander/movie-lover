@@ -59,7 +59,8 @@ $ pip install requests
 ```
 
 
-### … Fyll på när vi pippar nya saker
+
+
 
 * Christopher
 * Martin
