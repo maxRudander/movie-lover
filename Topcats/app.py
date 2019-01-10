@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html", author="Christopher")
+    return render_template("index.html")
 
 '''@app.route("/static/<path:path>")
 def serve_static_files(path):
