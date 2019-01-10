@@ -3,11 +3,6 @@ from functions import get_headlines, get_title_content
 
 app = Flask(__name__)
 
-"""
-API data-requests go to: http://www.omdbapi.com/?apikey=[db0723c0]&
-API poster-requests go to: http://img.omdbapi.com/?apikey=[db0723c0]&
-"""
-
 @app.route("/")
 def index():
     return render_template("index.html")
