@@ -9,7 +9,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/<film>")
+@app.route("/search/<film>")
 def movie_request(film):
 	film_data = {
 			'title': omdb.get_movie(film)['Title'],

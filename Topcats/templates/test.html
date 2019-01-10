@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>TEST BRO COME ON</title>
-</head>
-<body>
-	{{ film_data.title }} <br>
-	{{ film_data.plot }}
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block body %}
+
+	<div class="jumbotron jumbotron-fluid home">
+		<div class="container home">
+			<h1 class="display-4 home"><strong>{{ film_data.title }}</strong></h1>
+			<div class="movie-poster">
+
+			</div>
+			<div class="movie-info">
+				{{ film_data.plot }}
+			</div>
+			<div class="movie-trailer">
+
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
