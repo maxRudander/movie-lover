@@ -51,6 +51,14 @@ Python-ramverket Flask används för att bygga webbservern. Installera Flask i d
 $ pip install Flask
 ```
 
+### Installera Requests
+För att skicka requests till APIer måste modulen requests installeras.
+
+```
+$ pip install requests
+```
+
+
 ### … Fyll på när vi pippar nya saker
 
 * Christopher
