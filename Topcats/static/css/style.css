@@ -6,8 +6,10 @@ body {
 	font-weight: 700;
 }
 
-nav {
+nav.navbar {
 	background-color: rgb(180, 11, 11);
+	height: 60px;
+	overflow: hidden;
 }
 
 a.navbar-brand {
