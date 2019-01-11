@@ -8,13 +8,18 @@
     <div class="navbar-collapse collapse order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
           <li class="navbar-item">
-              <form action="">
-                <input class="search-field" type="search" placeholder="Sök film..." name="search-field" id="search-field">
-                <button class="btn btn-danger" id="search-button">Sök!</button>
-              </form>
+              <input type="text" placeholder="Sök film..." name="search-field" id="search-field">
+              <button class="btn btn-danger" id="search-button" onclick="search();">Sök!</button>
           </li>
         </ul>
     </div>
 </nav>
 
-<script type="text/javascript" src="../../static/js/search.js"></script>
+<script type="text/javascript">
+  searchField = document.getElementById("search-field");
+  searchButton = document.getElementById("search-button");
+
+  function search(){
+    window.location.href = "/search/" + searchField.value;
+  };
+</script>
