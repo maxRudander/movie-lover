@@ -15,7 +15,7 @@ def movie_request(film):
 			'title': omdb.get_movie(film)['Title'],
 			'plot': omdb.get_movie(film)['Plot']
 			}
-	return render_template("test.html", film_data=film_data)
+	return render_template("search.html", film_data=film_data)
 
 '''@app.route("/static/<path:path>")
 def serve_static_files(path):
