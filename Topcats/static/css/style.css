@@ -1,14 +1,12 @@
 body {
 	color: rgb(180, 11, 11);
 	font-size: 16px;
-	margin-top: 4em;
+	margin-top: 3.5em;
 }
 
 nav.navbar {
 	background-color: rgb(180, 11, 11);
-	height: 4em;
-	overflow: hidden;
-
+	height: 3.5em;
 }
 
 a.navbar-brand {
@@ -16,17 +14,19 @@ a.navbar-brand {
 	color: #eee;
 }
 
-.navbar-collapse {
-	flex-grow: 0;
-	align-items: right;
+nav ul {
+	margin-left: auto;
 }
 
-nav form input.search-field {
-	margin-top: 3px;
+nav input[name=search-field] {
+	margin-top: 5px;
+	padding: 6px;
+	border-radius: 3px;
+	border: none;
 }
 
-nav form button {
-	margin-bottom: 4px;
+nav li button {
+	margin-bottom: 5px;
 }
 
 div.alert {
@@ -62,6 +62,11 @@ div.alert {
 .jumbotron {
 	background-color: #fff;
 	margin-bottom: 0;
+}
+
+div.jumbotron.home div.container.home {
+	max-width: 700px;
+	text-align: center;
 }
 
 div.container.container-smaller {
@@ -151,19 +156,39 @@ div.home img {
 
 /*********** MEDIA QUERIES ***********/
 
+@media (max-width: 290px) {
+
+	nav.navbar {
+		height: 7em;
+	}
+
+	nav input[name=search-field] {
+		width: 50%;
+	}
+
+}
+
+@media (max-width: 450px) {
+
+	body {
+		margin-top: 7em;
+	}
+
+	nav.navbar {
+		height: 7em;
+	}
+
+	nav ul {
+		width: 100%;
+	}
+
+}
+
 /*xs bootstrap */
 @media (max-width: 576px) {
 
-	nav > div.navbar-collapse > ul > a {
-		margin-left: 0 !important;
-	}
-
-	div.jumbotron.home {
-		height: 250px;
-	}
-
 	div.jumbotron.home div.container {
-		display: none;
+		width: 90%;
 	}
 
 	div.jumbotron.home div.container p {
@@ -216,15 +241,16 @@ div.home img {
 		text-align: left;
 	}
 
-	footer {
-		text-align: center;
-	}
-
 }
-
 
 /* sm bootstrap */
 @media (min-width: 576px) and (max-width: 767px) {
+
+
+		div.jumbotron.home div.container.home {
+			width: 90%;
+		}
+
 
 	div.jumbotron.home div.container p {
 		font-size: 1.25em;
