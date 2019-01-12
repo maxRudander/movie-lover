@@ -1,6 +1,5 @@
 import requests
 
-
 def get_movie(film):
 	data_response = requests.get(f'http://www.omdbapi.com/?t={film}&apikey=f6aaec81')
 	if data_response.status_code is not 200:
