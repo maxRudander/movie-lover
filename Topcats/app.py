@@ -1,5 +1,4 @@
 from flask import Flask, render_template, flash, redirect, url_for, session, logging, request
-from functions import get_headlines, get_title_content
 import omdb
 
 app = Flask(__name__)
