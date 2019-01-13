@@ -16,10 +16,6 @@ def movie_request(film):
 			}
 	return render_template("test.html", film_data=film_data)
 
-'''@app.route("/static/<path:path>")
-def serve_static_files(path):
-    return send_from_directory("static", path)'''
-
 if __name__ == "__main__":
     app.secret_key='secret123'
     app.run(debug=True)
