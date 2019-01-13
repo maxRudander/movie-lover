@@ -85,6 +85,14 @@ section p {
 	text-align: justify;
 }
 
+div.movie-poster {
+	float: left;
+}
+
+div.movie-info {
+	float: left;
+}
+
 footer {
 	background-color: rgb(180, 11, 11);
 	padding: 1em 0 0;
