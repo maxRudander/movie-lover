@@ -86,15 +86,14 @@ section p {
 }
 
 footer {
-	position: fixed;
 	background-color: rgb(180, 11, 11);
 	padding: 1em 0 0;
-	overflow: hidden;
 	text-align: center;
 }
 
 footer span {
 	color: #ccc;
+	font-weight: 400;
 }
 
 /***** index.html *****/
