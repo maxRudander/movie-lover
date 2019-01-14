@@ -10,12 +10,15 @@ def index():
 
 @app.route("/search/<film>")
 def movie_request(film):
-	film_data = {
-			'title': omdb.get_movie(film)['Title'],
-			'plot': omdb.get_movie(film)['Plot'],
-			'poster': tmdb.get_poster(film)
-			}
-	return render_template("search.html", film_data=film_data)
+    try:
+    	film_data = {
+    			'title': omdb.get_movie(film)['Title'],
+    			'plot': omdb.get_movie(film)['Plot'],
+    			'poster': tmdb.get_poster(film)
+    			}
+    	return render_template("search.html", film_data=film_data)
+    except KeyError:
+        return redirect("/")
 
 if __name__ == "__main__":
     app.secret_key='secret123'
