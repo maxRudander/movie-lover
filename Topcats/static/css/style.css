@@ -76,18 +76,6 @@ div.jumbotron.home div.container.home {
 	max-height: auto;
 }
 
-div.movie-poster {
-	display: inline-block;
-}
-
-div.movie-info {
-	float: left;
-}
-
-div.movie-trailer {
-	
-}
-
 div.container.container-smaller {
 	width: 960px;
 }
@@ -203,6 +191,10 @@ div.home img {
 
 }
 
+.movie-info-col:first-of-type {
+	margin-bottom: 1em;
+}
+
 /*xs bootstrap */
 @media (max-width: 576px) {
 
@@ -260,16 +252,18 @@ div.home img {
 		text-align: left;
 	}
 
+	.movie-info-col:first-of-type {
+		margin-bottom: 1em;
+	}
+
 }
 
 /* sm bootstrap */
 @media (min-width: 576px) and (max-width: 767px) {
 
-
-		div.jumbotron.home div.container.home {
-			width: 90%;
-		}
-
+	div.jumbotron.home div.container.home {
+		width: 90%;
+	}
 
 	div.jumbotron.home div.container p {
 		font-size: 1.25em;
