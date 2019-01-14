@@ -1,32 +1,33 @@
 body {
 	color: rgb(180, 11, 11);
 	font-size: 16px;
-	margin-top: 4em;
+	margin-top: 3.5em;
 }
 
 nav.navbar {
 	background-color: rgb(180, 11, 11);
-	height: 4em;
-	overflow: hidden;
-
+	height: 3.5em;
 }
 
 a.navbar-brand {
-	font-family: 'Lobster';
+	font-family: 'Lobster', cursive;
+	font-size: 24px;
 	color: #eee;
 }
 
-.navbar-collapse {
-	flex-grow: 0;
-	align-items: right;
+nav ul {
+	margin-left: auto;
 }
 
-nav form input.search-field {
-	margin-top: 3px;
+nav input[name=search-field] {
+	margin-top: 5px;
+	padding: 6px;
+	border-radius: 3px;
+	border: none;
 }
 
-nav form button {
-	margin-bottom: 4px;
+nav li button {
+	margin-bottom: 5px;
 }
 
 div.alert {
@@ -38,6 +39,10 @@ div.alert {
 
 .display-4 {
 	font-size: 3.5rem;
+}
+
+h1.display-4 {
+	font-family: 'Lobster', cursive;
 }
 
 .display-5 {
@@ -64,6 +69,20 @@ div.alert {
 	margin-bottom: 0;
 }
 
+div.jumbotron.home div.container.home {
+	max-width: 700px;
+	text-align: left;
+	max-height: auto;
+}
+
+div.movie-poster {
+	display: inline-block;
+}
+
+div.movie-info {
+	display: inline-block;
+}
+
 div.container.container-smaller {
 	width: 960px;
 }
@@ -83,12 +102,12 @@ section p {
 footer {
 	background-color: rgb(180, 11, 11);
 	padding: 1em 0 0;
-	overflow: hidden;
 	text-align: center;
 }
 
 footer span {
 	color: #ccc;
+	font-weight: 400;
 }
 
 /***** index.html *****/
@@ -151,19 +170,39 @@ div.home img {
 
 /*********** MEDIA QUERIES ***********/
 
+@media (max-width: 290px) {
+
+	nav.navbar {
+		height: 7em;
+	}
+
+	nav input[name=search-field] {
+		width: 50%;
+	}
+
+}
+
+@media (max-width: 450px) {
+
+	body {
+		margin-top: 7em;
+	}
+
+	nav.navbar {
+		height: 7em;
+	}
+
+	nav ul {
+		width: 100%;
+	}
+
+}
+
 /*xs bootstrap */
 @media (max-width: 576px) {
 
-	nav > div.navbar-collapse > ul > a {
-		margin-left: 0 !important;
-	}
-
-	div.jumbotron.home {
-		height: 250px;
-	}
-
 	div.jumbotron.home div.container {
-		display: none;
+		width: 90%;
 	}
 
 	div.jumbotron.home div.container p {
@@ -216,15 +255,16 @@ div.home img {
 		text-align: left;
 	}
 
-	footer {
-		text-align: center;
-	}
-
 }
-
 
 /* sm bootstrap */
 @media (min-width: 576px) and (max-width: 767px) {
+
+
+		div.jumbotron.home div.container.home {
+			width: 90%;
+		}
+
 
 	div.jumbotron.home div.container p {
 		font-size: 1.25em;

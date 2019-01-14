@@ -1,6 +1,5 @@
 import requests
 
-
 def get_movie(film):
 	"""
 	Search function for movies with the OMDB api.
