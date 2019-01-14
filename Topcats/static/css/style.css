@@ -81,7 +81,11 @@ div.movie-poster {
 }
 
 div.movie-info {
-	display: inline-block;
+	float: left;
+}
+
+div.movie-trailer {
+	
 }
 
 div.container.container-smaller {
