@@ -10,7 +10,8 @@ nav.navbar {
 }
 
 a.navbar-brand {
-	font-family: 'Lobster';
+	font-family: 'Lobster', cursive;
+	font-size: 24px;
 	color: #eee;
 }
 
@@ -40,6 +41,10 @@ div.alert {
 	font-size: 3.5rem;
 }
 
+h1.display-4 {
+	font-family: 'Lobster', cursive;
+}
+
 .display-5 {
 	font-size: 2.5rem;
 	font-weight: 300;
@@ -66,7 +71,16 @@ div.alert {
 
 div.jumbotron.home div.container.home {
 	max-width: 700px;
-	text-align: center;
+	text-align: left;
+	max-height: auto;
+}
+
+div.movie-poster {
+	display: inline-block;
+}
+
+div.movie-info {
+	display: inline-block;
 }
 
 div.container.container-smaller {
