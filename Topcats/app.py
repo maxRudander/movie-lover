@@ -11,12 +11,16 @@ def index():
 @app.route("/search/<film>")
 def movie_request(film):
     try:
-    	film_data = {
-    			'title': omdb.get_movie(film)['Title'],
-    			'plot': omdb.get_movie(film)['Plot'],
-    			'poster': tmdb.get_poster(film)
-    			}
-    	return render_template("search.html", film_data=film_data)
+        film_data = {
+            'title': omdb.get_movie(film)['Title'],
+            'plot': omdb.get_movie(film)['Plot'],
+            'poster': tmdb.get_poster(film)
+        }
+
+        if film_data['plot'] == 'N/A':
+            film_data['plot'] = 'Finns ingen tillgänglig beskrivning'
+
+        return render_template("search.html", film_data=film_data)
     except KeyError:
         flash("Det finns ingen film med titeln du angav", "success")
         return redirect("/")
