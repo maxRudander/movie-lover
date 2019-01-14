@@ -1,6 +1,7 @@
 from flask import Flask, render_template, flash, redirect, url_for, session, logging, request
 import omdb
 import tmdb
+import wiki
 
 app = Flask(__name__)
 
@@ -14,7 +15,8 @@ def movie_request(film):
     	film_data = {
     			'title': omdb.get_movie(film)['Title'],
     			'plot': omdb.get_movie(film)['Plot'],
-    			'poster': tmdb.get_poster(film)
+    			'poster': tmdb.get_poster(film),
+				'junk' : wiki.get_wiki(film)
     			}
     	return render_template("search.html", film_data=film_data)
     except KeyError:
