@@ -21,6 +21,13 @@ def movie_request(film):
         flash("Det finns ingen film med titeln du angav", "success")
         return redirect("/")
 
+
+@app.route("/search/")
+def page_not_found():
+    ''' Runs when no search data is submitted '''
+    flash("Ingen filmtitel angavs", "success")
+    return redirect("/")
+
 if __name__ == "__main__":
     app.secret_key='secret123'
     app.run(debug=True)
