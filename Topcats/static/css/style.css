@@ -30,11 +30,12 @@ nav li button {
 	margin-bottom: 5px;
 }
 
+/* style for flash messages */
 div.alert {
 	position: absolute;
 	margin-top: 0;
 	width: 100%;
-	border-radius: 0px;
+	border-radius: 0;
 }
 
 .display-4 {

@@ -18,6 +18,7 @@ def movie_request(film):
     			}
     	return render_template("search.html", film_data=film_data)
     except KeyError:
+        flash("Det finns ingen film med titeln du angav", "success")
         return redirect("/")
 
 if __name__ == "__main__":
