@@ -160,6 +160,16 @@ div.home img {
 	width: 100%;
 }
 
+.trailer-div {
+	padding-top: 2em;
+}
+
+.trailer-div iframe {
+	width: 100%;
+}
+
+
+
 
 /*********** MEDIA QUERIES ***********/
 
