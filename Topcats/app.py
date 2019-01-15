@@ -15,7 +15,8 @@ def movie_request(film):
         film_data = {
             'title': omdb.get_movie(film)['Title'],
             'plot': omdb.get_movie(film)['Plot'],
-            'poster': tmdb.get_poster(film),
+            'poster': tmdb.get_poster(film)[0],
+			'video': tmdb.get_poster(film)[1],
             'junk' : wiki.get_wiki(film)
         }
         if film_data["plot"] == "N/A":
