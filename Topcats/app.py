@@ -21,7 +21,7 @@ def movie_request(film):
         if film_data["plot"] == "N/A":
             film_data["plot"] = "Finns ingen beskrivning tillgänglig"
 
-            return render_template("search.html", film_data=film_data)
+        return render_template("search.html", film_data=film_data)
     except KeyError:
         flash("Det finns ingen film med titeln du angav", "success")
         return redirect("/")
