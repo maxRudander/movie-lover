@@ -11,12 +11,16 @@ def index():
 
 @app.route("/search/<film>")
 def movie_request(film):
+	"""
+	Hämtar data från de olika api:erna och skickar datan till
+	en html-template för presentation.
+	"""
     try:
         film_data = {
             'title': omdb.get_movie(film)['Title'],
             'plot': omdb.get_movie(film)['Plot'],
 			'video': tmdb.get_trailer(film),
-            'junk' : wiki.get_wiki(film)
+            'poster' : wiki.get_wiki(film)
         }
         if film_data["plot"] == "N/A":
             film_data["plot"] = "Finns ingen beskrivning tillgänglig"
