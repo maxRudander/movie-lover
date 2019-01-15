@@ -15,8 +15,7 @@ def movie_request(film):
         film_data = {
             'title': omdb.get_movie(film)['Title'],
             'plot': omdb.get_movie(film)['Plot'],
-            'poster': tmdb.get_poster(film)[0],
-			'video': tmdb.get_poster(film)[1],
+			'video': tmdb.get_trailer(film),
             'junk' : wiki.get_wiki(film)
         }
         if film_data["plot"] == "N/A":
@@ -26,7 +25,6 @@ def movie_request(film):
     except KeyError:
         flash("Det finns ingen film med titeln du angav", "success")
         return redirect("/")
-
 
 @app.route("/search/")
 def page_not_found():
