@@ -12,7 +12,7 @@
 					</div>
 					<div class="movie-info-col col-md-6">
 						{% if film_data.poster != None %}
-							<img alt="poster" style="max-height:400px;max-width:500px;width:auto;height:auto;" src={{ film_data.poster }} />
+							<img alt="poster" src={{ film_data.poster }} />
 						{% else %}
 							<img alt="no poster pic" src="/static/image/poster-not-found.jpg">
 						{% endif %}
