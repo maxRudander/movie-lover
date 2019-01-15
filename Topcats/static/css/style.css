@@ -160,12 +160,18 @@ div.home img {
 	width: 100%;
 }
 
+.movie-info-col img {
+	max-width: 300px;
+	
+}
+
 .trailer-div {
 	padding-top: 2em;
 }
 
 .trailer-div iframe {
 	width: 100%;
+	border: none;
 }
 
 
