@@ -58,11 +58,9 @@ För att skicka requests till APIer måste modulen requests installeras.
 $ pip install requests
 ```
 
+### Installera BeautifulSoup
+För att behandla APIers data som returneras i HTML används biblioteket Beautiful Soup.
 
-
-
-
-* Christopher
-* Martin
-* Max
-* Tobias
+```
+$ pip install beautifulsoup4
+```
