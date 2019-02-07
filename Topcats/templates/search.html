@@ -22,7 +22,7 @@
 					<div class="col-md-12">
 						<h3 class="display-5">Trailer</h3>
 						{% if film_data.video is not none %}
-						<iframe width="420" height="315" src={{ film_data.video }}></iframe>
+						<iframe width="420" height="315" src={{ film_data.video }} allowfullscreen></iframe>
 						{% else %}
 						<p>Det fanns ingen trailer för denna film.</p>
 						{% endif %}
