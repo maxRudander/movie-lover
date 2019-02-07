@@ -20,24 +20,24 @@ $ mkdir <project-name> (Skapar projektmapp. Skippa detta om en projektmapp redan
 $ cd project-name
 ```
 
-Mac:
+**Mac:**
 ```
 $ python3 -m venv <venv-name>
 ```
 
-Windows:
+**Windows:**
 ```
 $ py -3 -m venv <venv-name>
 ```
 
 Aktivera den virtuella miljön med följande kommando:
 
-Mac:
+**Mac:**
 ```
 $ . venv/bin/activate
 ```
 
-Windows:
+**Windows:**
 ```
 venv\Scripts\activate
 ```
@@ -76,7 +76,7 @@ git clone https://github.com/maxRudander/movie-lover.git
 
 En mapp med namnet **movie-lover** innehållande all kod ska nu finnas i den virtuella miljön.
 
-# Kör applikationen
+#"" Kör applikationen
 Navigera via terminalen till den virtuella miljön och skriv följande kommando:
 
 ```
@@ -89,5 +89,5 @@ Starta servern med följande kommando:
 python app.py
 ```
 
-## Använd applikationen i webbläsaren
+### Använd applikationen i webbläsaren
 Öppna valfri webbläsare och ange följande URL: **localhost:5000**.
