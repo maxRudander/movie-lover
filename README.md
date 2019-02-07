@@ -76,7 +76,7 @@ git clone https://github.com/maxRudander/movie-lover.git
 
 En mapp med namnet **movie-lover** innehållande all kod ska nu finnas i den virtuella miljön.
 
-#"" Kör applikationen
+## Kör applikationen
 Navigera via terminalen till den virtuella miljön och skriv följande kommando:
 
 ```
