@@ -11,9 +11,6 @@ def get_trailer(film):
 	video_response = requests.get(f'http://api.themoviedb.org/3/movie/{id}/videos?api_key=d4e35699aa07152cd0a3e572fff5f595').json()
 
 	try:
-		video_src = 'https://www.youtube.com/embed/' + video_response['results'][0]['key']
-		good_stuff = video_src
-
-		return good_stuff
+		return 'https://www.youtube.com/embed/' + video_response['results'][0]['key']
 	except IndexError:
    		return None
