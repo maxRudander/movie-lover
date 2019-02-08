@@ -17,7 +17,7 @@ def movie_request(film):
     en html-template för presentation.
     """
     try:
-        omdb_data = omdb.get_movie(film) # Contains title and plot
+        omdb_data = omdb.get_movie(film) # Contains title and plot among other data
         film_data = {
             'title': omdb_data['Title'],
             'plot': omdb_data['Plot'],
