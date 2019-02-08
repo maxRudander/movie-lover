@@ -9,6 +9,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+
 @app.route("/search/<film>")
 def movie_request(film):
     """
@@ -16,9 +17,10 @@ def movie_request(film):
     en html-template för presentation.
     """
     try:
+        omdb_data = omdb.get_movie(film) # Contains title and plot
         film_data = {
-            'title': omdb.get_movie(film)['Title'],
-            'plot': omdb.get_movie(film)['Plot'],
+            'title': omdb_data['Title'],
+            'plot': omdb_data['Plot'],
             'video': tmdb.get_trailer(film),
             'poster' : wiki.get_wiki(film)
         }
@@ -30,12 +32,14 @@ def movie_request(film):
         flash("Det finns ingen film med titeln du angav", "success")
         return redirect("/")
 
+
 @app.route("/search/")
 def page_not_found():
     ''' Runs when no search data is submitted '''
     flash("Ingen filmtitel angavs", "success")
     return redirect("/")
 
+
 if __name__ == "__main__":
-    app.secret_key='secret123'
+    app.secret_key='8d9a8b0209ad22b1799ddd119b32dcb0'
     app.run(debug=True)
