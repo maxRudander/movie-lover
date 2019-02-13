@@ -24,6 +24,7 @@ def movie_request(film):
             'video': tmdb.get_trailer(film),
             'poster' : wiki.get_wiki(film)
         }
+        
         if film_data["plot"] == "N/A":
             film_data["plot"] = "Finns ingen beskrivning tillgänglig"
 
