@@ -10,17 +10,23 @@ Python 3.7 används som programmeringsspråk till servern. Följ instruktionerna
 
 Kommande installationer sköts via kommandotolken / terminalen. När ordet “terminal” används framöver menas både Macs terminal och Windows kommandotolk.
 
-### Virtuell miljö
-När Python är installerat bör en virtuell miljö för koden skapas i projektmappen. Beroenden som applikationen använder installeras i den virtuella miljön.
-
-Navigera via terminalen till den mapp projektmappen ska ligga i. Skriv sedan:
-
+Skapa en projektmapp och navigera till denna.
 ```
 $ mkdir <project-name> (Skapar projektmapp. Skippa detta om en projektmapp redan finns.)
 $ cd project-name
 ```
 
-**Mac:**
+### Virtuell miljö
+När Python är installerat bör en virtuell miljö för koden skapas i projektmappen. Beroenden som applikationen använder installeras i den virtuella miljön.
+
+**Ubuntu Linux**
+Virtuella miljöer är inte förinstallerade i Python som är installerat på Ubuntu Linux. Skriv följande kommando för att installera modulen för virtuella miljöer på din dator:
+```
+$ sudo apt-get install python3-venv
+```
+
+Skapa en virtuell miljö i projektmappen.
+**Mac & Linux:**
 ```
 $ python3 -m venv <venv-name>
 ```
@@ -32,7 +38,7 @@ $ py -3 -m venv <venv-name>
 
 Aktivera den virtuella miljön med följande kommando:
 
-**Mac:**
+**Mac & Linux:**
 ```
 $ . venv/bin/activate
 ```
