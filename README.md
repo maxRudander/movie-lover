@@ -5,10 +5,10 @@ Filmälskaren är en webbapplikation som hjälper filmälskare hitta information
 ## Installation
 Följ instruktionerna nedan för att installera de program och beroenden som behövs för att kunna köra applikationen.
 
-### Installera Python
+### Installera Python 3.7
 Python 3.7 används som programmeringsspråk till servern. Följ instruktionerna på https://www.python.org/downloads/ och installera Python 3.7.
 
-Kommande installationer sköts via kommandotolken / terminalen. När ordet “terminal” används framöver menas både Macs terminal och Windows kommandotolk.
+Kommande installationer sköts via kommandotolken / terminalen. När ordet *terminal* används framöver menas både Macs terminal och Windows kommandotolk.
 
 Skapa en projektmapp och navigera till denna.
 ```
@@ -20,12 +20,14 @@ $ cd project-name
 När Python är installerat bör en virtuell miljö för koden skapas i projektmappen. Beroenden som applikationen använder installeras i den virtuella miljön.
 
 **Ubuntu Linux**
-Virtuella miljöer är inte förinstallerade i Python som är installerat på Ubuntu Linux. Skriv följande kommando för att installera modulen för virtuella miljöer på din dator:
+
+Python som är installerade på Ubuntu Linux har inte modulen för virtuella miljöer förinstallerad. Skriv följande kommando för att installera modulen för virtuella miljöer på din dator:
 ```
 $ sudo apt-get install python3-venv
 ```
 
 Skapa en virtuell miljö i projektmappen.
+
 **Mac & Linux:**
 ```
 $ python3 -m venv <venv-name>
@@ -65,7 +67,7 @@ $ pip install requests
 ```
 
 ### Installera BeautifulSoup
-För att behandla APIers data som returneras i HTML används biblioteket Beautiful Soup.
+För att behandla APIers data som returneras som HTML används biblioteket Beautiful Soup.
 
 ```
 $ pip install beautifulsoup4
@@ -74,7 +76,7 @@ $ pip install beautifulsoup4
 ### Klona projektets git-repo
 För att kunna köra programmet måste källkoden finnas på din dator. Denna hämtas enklast genom att klona projektets git-repo.
 
-Navigera via terminalen till den virtuella miljön och kör sedan följande kommando:
+Navigera via terminalen till den virtuella miljön och kör sedan kommandot:
 
 ```
 git clone https://github.com/maxRudander/movie-lover.git
