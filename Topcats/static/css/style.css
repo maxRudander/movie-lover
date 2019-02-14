@@ -51,15 +51,6 @@ h1.display-4 {
 	font-weight: 300;
 }
 
-.display-6 {
-	font-size: 2rem;
-	font-weight: 300;
-}
-
-.display-7 {
-	font-size: 1.3rem;
-}
-
 .light {
 	font-weight: 300;
 	font-size: 18px;
@@ -173,8 +164,6 @@ div.home img {
 	width: 100%;
 	border: none;
 }
-
-
 
 
 /*********** MEDIA QUERIES ***********/
@@ -309,10 +298,6 @@ div.home img {
 
 	.display-5 {
 		font-size: 2.25em;
-	}
-
-	.display-6 {
-		font-size: 2em;
 	}
 
 }
