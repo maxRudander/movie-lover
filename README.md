@@ -91,7 +91,7 @@ Navigera via terminalen till den virtuella miljön och skriv följande kommando:
 cd movie-lover/Topcats
 ```
 
-Starta servern med följande kommando:
+Se till att den virtuella miljön är aktiverad (ifall den inte redan är det) och starta sedan servern med följande kommando:
 
 ```
 python app.py

@@ -14,7 +14,7 @@ def get_wiki(film):
 		title = search_result['query']['search'][0]['title']
 	except IndexError:
 		return None
-	
+
 	template_info = requests.get(f'https://en.wikipedia.org/w/api.php?action=parse&pageid={id}&section=0&prop=wikitext&format=json')
 
 	resp = requests.get(f'http://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&format=json&titles={title}&rvsection=0&rvparse').json()
