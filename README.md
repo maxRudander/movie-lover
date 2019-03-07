@@ -60,7 +60,7 @@ $ pip install Flask
 ```
 
 ### Installera Requests
-För att skicka requests till APIer installeras modulen requests.
+För att skicka requests till APIer används modulen requests.
 
 ```
 $ pip install requests
